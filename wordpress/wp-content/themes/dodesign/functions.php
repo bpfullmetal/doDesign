@@ -83,6 +83,13 @@ if ( ! function_exists( 'dodesign_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'dodesign_setup' );
 
+function theme_prefix_the_custom_logo() {
+
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+
+}
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -158,4 +165,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

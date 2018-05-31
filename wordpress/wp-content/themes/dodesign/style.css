@@ -1,7 +1,7 @@
 /*!
 Theme Name: DODesign
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: theDaringRob
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
@@ -610,6 +610,8 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -639,7 +641,6 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 }
 
@@ -981,4 +982,15 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/* Rob Styling */
+.site-header{
+	width: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.main-navigation ul li{
+	margin-left: 10px;
 }
